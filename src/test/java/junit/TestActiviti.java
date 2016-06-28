@@ -34,7 +34,7 @@ public class TestActiviti {
 	//使用配置文件创建数据流执行所需要的23张表
 	@Test
 	public void creaTeble_2(){
-		ProcessEngineConfiguration processEngineConfiguration=ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti-cfg.xml");
+		ProcessEngineConfiguration processEngineConfiguration=ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml");
 		//工作流核心对象，ProcessEngine对象
 		ProcessEngine processEngine = processEngineConfiguration.buildProcessEngine();
 		System.out.println("processEngine:"+ processEngine);
